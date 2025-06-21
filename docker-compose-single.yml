@@ -1,7 +1,7 @@
 version: '3'
 services:
   nacos:
-    image: zhusaidong/nacos-server-m1:2.0.3
+    image: nacos/nacos-server:v2.1.2-slim
     container_name: nacos-server
     environment:
       - PREFER_HOST_MODE=hostname

@@ -1,6 +1,6 @@
 services:
   nacos1:
-    image: zhusaidong/nacos-server-m1:2.0.3
+    image: nacos/nacos-server:v2.1.2-slim 
     container_name: nacos1
     hostname: nacos1
     environment:
@@ -28,7 +28,7 @@ services:
       - "9848:9848"
 
   nacos2:
-    image: zhusaidong/nacos-server-m1:2.0.3
+    image: nacos/nacos-server:v2.1.2-slim
     container_name: nacos2
     hostname: nacos2
     environment:
@@ -56,7 +56,7 @@ services:
       - "9849:9848"
 
   nacos3:
-    image: zhusaidong/nacos-server-m1:2.0.3
+    image: nacos/nacos-server:v2.1.2-slim
     container_name: nacos3
     hostname: nacos3
     environment:
