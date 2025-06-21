@@ -4,3 +4,6 @@ myenv
 py_daemon/app
 py_daemon/log
 py_daemon/nacos-data
+py_client/log
+py_service/log
+py_client/service_ips
