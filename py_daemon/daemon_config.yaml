@@ -1,0 +1,37 @@
+nacos:
+  server_addresses: "localhost:8848"  # Nacos服务器地址
+  namespace: "public"                # 命名空间ID
+  username: "nacos"                  # 用户名(可选)
+  password: "nacos"                  # 密码(可选)
+
+log_file: "./log/nacos_config_daemon.log"
+
+# 配置映射，将Nacos的dataId映射到本地文件
+config_mapping:
+  "database-config":
+    file_path: "./app/database.conf"  
+    group: "DEFAULT_GROUP"             
+  
+  "redis-config":
+    file_path: "./app/redis.conf"
+    group: "DEFAULT_GROUP"
+  
+  "application-properties":
+    file_path: "./app/application.properties"
+    group: "DEFAULT_GROUP"
+  
+  "application-properties1":
+    file_path: "./app/application1.properties"
+    group: "DEFAULT_GROUP"
+  
+  "application-properties2":
+    file_path: "./app/application2.properties"
+    group: "DEFAULT_GROUP"
+  
+  "application-properties3":
+    file_path: "./app/application3.properties"
+    group: "DEFAULT_GROUP"
+  
+  "application-properties4":
+    file_path: "./app/application4.properties"
+    group: "DEFAULT_GROUP"

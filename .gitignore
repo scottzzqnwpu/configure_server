@@ -1,3 +1,6 @@
 cluster-logs
 mysql
 myenv
+py_daemon/app
+py_daemon/log
+py_daemon/nacos-data
